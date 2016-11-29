@@ -1,0 +1,27 @@
+<%#
+# Carrierwave Form Partial
+
+This partial renders a file input field.
+
+## Local variables:
+
+- `f`:
+  A Rails form generator, used to help create the appropriate input fields.
+- `field`:
+  An instance of Administrate::Field::Carrierwave.
+  A wrapper around the attribute pulled from the database.
+%>
+
+<div class="field-unit__label">
+  <%= f.label field.attribute %>
+</div>
+<div class="field-unit__field">
+  <%= f.file_field field.attribute %>
+  <br />
+  <%- if field.uploaded? -%>
+    <%= render 'fields/carrierwave/preview', field: field %>
+    <%= link_to field.filename, field.url, title: field.filename, target: '_blank' %>
+  <%- else -%>
+    <span>No file uploaded yet</span>
+  <%- end -%>
+</div>

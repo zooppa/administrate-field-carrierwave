@@ -1,0 +1,14 @@
+<%#
+# Carrierwave Index Partial
+
+This partial renders the URL of the attachment as a link that
+opens in a new window/tab
+
+## Local variables:
+
+- `field`:
+  An instance of Administrate::Field::Carrierwave.
+  A wrapper around the attribute pulled from the database.
+%>
+
+<%= link_to 'View', field.url, title: field.filename, target: '_blank' %>
