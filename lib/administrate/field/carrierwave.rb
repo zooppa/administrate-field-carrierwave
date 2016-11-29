@@ -3,10 +3,9 @@ require 'rails'
 
 module Administrate
   module Field
-    class Engine < ::Rails::Engine
-    end
-
     class Carrierwave < Administrate::Field::Base
+      class Engine < ::Rails::Engine; end
+
       delegate :url, :filename, to: :data, allow_nil: true
 
       def image
