@@ -12,4 +12,4 @@ opens in a new window/tab, and an optional image preview
 %>
 
 <%= render 'fields/carrierwave/preview', field: field %>
-<%= link_to field.filename, field.url, target: '_blank' %>
+<%= link_to field.basename, field.url, title: field.filename, target: '_blank' %>

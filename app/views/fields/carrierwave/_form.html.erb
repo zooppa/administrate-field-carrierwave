@@ -20,7 +20,7 @@ This partial renders a file input field.
   <br />
   <%- if field.uploaded? -%>
     <%= render 'fields/carrierwave/preview', field: field %>
-    <%= link_to field.filename, field.url, title: field.filename, target: '_blank' %>
+    <%= link_to field.basename, field.url, title: field.filename, target: '_blank' %>
   <%- else -%>
     <span>No file uploaded yet</span>
   <%- end -%>

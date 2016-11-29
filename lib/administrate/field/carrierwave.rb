@@ -15,6 +15,10 @@ module Administrate
       def uploaded?
         url.present?
       end
+
+      def basename
+        File.basename(data.path)
+      end
     end
   end
 end
