@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    administrate-field-carrierwave (0.0.2)
+    administrate-field-carrierwave (0.0.3)
       administrate (~> 0.3.0)
       rails (>= 4.2)
 
