@@ -25,6 +25,16 @@ ATTRIBUTE_TYPES = {
   bar: Field::Carrierwave.with_options(image: :standard, multiple: true)
 }.freeze
 ```
+
+To handle multiple asset uploads, the attribute must point to an empty array in a hash:
+
+```ruby
+# If multiple: true
+def permitted_attributes
+  super - [:bar] + [{ bar: [] }]
+end
+```
+
 ### Options
 
 * `image` (default: `nil`): a [version] that will be displayed in an `<img>` element.
