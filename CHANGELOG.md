@@ -1,5 +1,10 @@
 # Changelog
 
+## [v0.1.0](https://github.com/z-productions/administrate-field-carrierwave/tree/v0.1.0) (2016-11-30)
+[Full Changelog](https://github.com/z-productions/administrate-field-carrierwave/compare/v0.0.3...v0.1.0)
+
+* Add support for multiple files
+
 ## [v0.0.3](https://github.com/z-productions/administrate-field-carrierwave/tree/v0.0.3) (2016-11-29)
 [Full Changelog](https://github.com/z-productions/administrate-field-carrierwave/compare/v0.0.2...v0.0.3)
 

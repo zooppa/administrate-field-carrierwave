@@ -2,7 +2,7 @@ $:.push File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name = 'administrate-field-carrierwave'
-  gem.version = '0.0.3'
+  gem.version = '0.1.0'
   gem.authors = ['Michele Gerarduzzi']
   gem.email = ['michele.gerarduzzi@gmail.com']
   gem.homepage = 'https://github.com/z-productions/administrate-field-carrierwave'
