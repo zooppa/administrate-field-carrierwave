@@ -1,8 +1,8 @@
 <%#
 # Carrierwave Show Partial
 
-This partial renders the URL of the attachment as a link that
-opens in a new window/tab, and an optional image preview
+This partial renders a summary of the current attachment(s)
+for this attribute
 
 ## Local variables:
 
@@ -11,5 +11,20 @@ opens in a new window/tab, and an optional image preview
   A wrapper around the attribute pulled from the database.
 %>
 
-<%= render 'fields/carrierwave/preview', field: field %>
-<%= link_to field.basename, field.url, title: field.filename, target: '_blank' %>
+<% if field.multiple? %>
+  <% if field.files.any? %>
+    <ul>
+      <%- field.files.each do |file| %>
+        <li><%= render 'fields/carrierwave/file', file: file %></li>
+      <% end %>
+    </ul>
+  <% else %>
+    <span>No file(s) uploaded yet</span>
+  <% end %>
+<% else %>
+  <% if field.image.present? %>
+    <%= render 'fields/carrierwave/preview', file: field.file, field: field %>
+  <% else %>
+    <%= render 'fields/carrierwave/file', file: field.file %>
+  <% end %>
+<% end %>

@@ -6,18 +6,21 @@ module Administrate
     class Carrierwave < Administrate::Field::Base
       class Engine < ::Rails::Engine; end
 
-      delegate :url, :filename, to: :data, allow_nil: true
-
       def image
         options.fetch(:image, nil)
       end
 
-      def uploaded?
-        url.present?
+      def multiple?
+        options.fetch(:multiple, false)
       end
 
-      def basename
-        File.basename(data.path)
+      # One-element array when single file field, array of files when multiple
+      def files
+        Array[*data]
+      end
+
+      def file
+        files.first
       end
     end
   end

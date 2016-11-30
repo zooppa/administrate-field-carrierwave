@@ -1,7 +1,8 @@
 <%#
 # Carrierwave Form Partial
 
-This partial renders a file input field.
+This partial renders a file input field and a summary of the current
+attachment(s) for this attribute
 
 ## Local variables:
 
@@ -16,12 +17,7 @@ This partial renders a file input field.
   <%= f.label field.attribute %>
 </div>
 <div class="field-unit__field">
-  <%= f.file_field field.attribute %>
+  <%= f.file_field field.attribute, multiple: field.multiple? %>
   <br />
-  <%- if field.uploaded? -%>
-    <%= render 'fields/carrierwave/preview', field: field %>
-    <%= link_to field.basename, field.url, title: field.filename, target: '_blank' %>
-  <%- else -%>
-    <span>No file uploaded yet</span>
-  <%- end -%>
+  <%= render 'fields/carrierwave/show', field: field %>
 </div>

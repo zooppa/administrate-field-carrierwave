@@ -2,7 +2,7 @@
 # Carrierwave Index Partial
 
 This partial renders the URL of the attachment as a link that
-opens in a new window/tab
+opens in a new window/tab, or the total number of attached files
 
 ## Local variables:
 
@@ -11,4 +11,8 @@ opens in a new window/tab
   A wrapper around the attribute pulled from the database.
 %>
 
-<%= link_to 'View', field.url, title: field.filename, target: '_blank' %>
+<% if field.multiple? %>
+  <%= pluralize(field.files.size, field.attribute.to_s.humanize.downcase) %>
+<% else %>
+  <%= link_to 'View', field.file.url, title: field.file.filename, target: '_blank' %>
+<% end %>
