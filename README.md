@@ -1,6 +1,6 @@
 # Administrate::Field::Carrierwave
 
-[![Code Climate](https://codeclimate.com/github/z-productions/administrate-field-carrierwave/badges/gpa.svg)](https://codeclimate.com/github/z-productions/administrate-field-carrierwave)
+[![Code Climate](https://codeclimate.com/github/zooppa/administrate-field-carrierwave/badges/gpa.svg)](https://codeclimate.com/github/zooppa/administrate-field-carrierwave)
 
 A plugin to upload and preview Carrierwave attachments in [Administrate].
 
