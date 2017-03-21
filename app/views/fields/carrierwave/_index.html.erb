@@ -13,6 +13,8 @@ opens in a new window/tab, or the total number of attached files
 
 <% if field.multiple? %>
   <%= pluralize(field.files.size, field.attribute.to_s.humanize.downcase) %>
-<% else %>
+<% elsif field.file.present? %>
   <%= link_to 'View', field.file.url, title: field.file.filename, target: '_blank' %>
+<% else %>
+  -
 <% end %>

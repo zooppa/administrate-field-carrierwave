@@ -24,7 +24,9 @@ for this attribute
 <% else %>
   <% if field.image.present? %>
     <%= render 'fields/carrierwave/preview', file: field.file, field: field %>
-  <% else %>
+  <% elsif field.file.present? %>
     <%= render 'fields/carrierwave/file', file: field.file %>
+  <% else %>
+      -
   <% end %>
 <% end %>
