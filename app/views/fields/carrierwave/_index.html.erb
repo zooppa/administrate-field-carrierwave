@@ -14,7 +14,11 @@ opens in a new window/tab, or the total number of attached files
 <% if field.multiple? %>
   <%= pluralize(field.files.size, field.attribute.to_s.humanize.downcase) %>
 <% elsif field.file.present? %>
-  <%= link_to 'View', field.file.url, title: field.file.filename, target: '_blank' %>
+  <% if field.image.present? %>
+    <%= render 'fields/carrierwave/preview', file: field.file, field: field %>
+  <% else %>
+    <%= link_to 'View', field.file.url, title: field.file.filename, target: '_blank' %>
+  <% end %>
 <% else %>
   -
 <% end %>

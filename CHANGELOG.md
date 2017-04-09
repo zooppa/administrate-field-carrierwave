@@ -1,5 +1,10 @@
 # Changelog
 
+## [v0.1.4](https://github.com/zooppa/administrate-field-carrierwave/tree/v0.1.4) (2017-04-03)
+[Full Changelog](https://github.com/zooppa/administrate-field-carrierwave/compare/v0.1.3...v0.1.4)
+
+* Show image in `index` view in order to make this gem more consistent with the gem `administrate-field-image`
+
 ## [v0.1.3](https://github.com/zooppa/administrate-field-carrierwave/tree/v0.1.3) (2017-04-03)
 [Full Changelog](https://github.com/zooppa/administrate-field-carrierwave/compare/v0.1.2...v0.1.3)
 
