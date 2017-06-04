@@ -22,7 +22,11 @@ Add to your `FooDashboard`:
 
 ```ruby
 ATTRIBUTE_TYPES = {
-  bar: Field::Carrierwave.with_options(image: :standard, multiple: true)
+  bar: Field::Carrierwave.with_options(
+    image: :standard,
+    multiple: true,
+    image_on_index: true
+  )
 }.freeze
 ```
 
@@ -38,6 +42,7 @@ end
 ### Options
 
 * `image` (default: `nil`): a [version] that will be displayed in an `<img>` element.
+* `image_on_index` (default: `false`): whether or not to show the image itself on the index list view. The default behavior (when false) is to display a "View" link that opens the image in a new tab/window when clicked.
 * `multiple` (default: `false`): allows uploading of multiple files. **ATTENTION 🚨**: [requires CarrierWave’s `master` branch](https://github.com/carrierwaveuploader/carrierwave#multiple-file-uploads). Uploaded files will replace the current ones – if present – and not add to them.
 
 ## About
