@@ -49,6 +49,8 @@ end
 
 `Administrate::Field::Carrierwave` is maintained by [z.productions].
 
+See also the list of [contributors](https://github.com/zooppa/administrate-field-carrierwave/contributors) who participated in this project.
+
 [Administrate]: https://github.com/thoughtbot/administrate
 [version]: https://github.com/carrierwaveuploader/carrierwave#adding-versions
 [z.productions]: https://www.z.productions/
