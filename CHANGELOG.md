@@ -1,5 +1,10 @@
 # Changelog
 
+## [v0.2.0](https://github.com/zooppa/administrate-field-carrierwave/tree/v0.2.0) (2017-06-06)
+[Full Changelog](https://github.com/zooppa/administrate-field-carrierwave/compare/v0.1.3...v0.2.0)
+
+* Add ability to show image on index
+
 ## [v0.1.3](https://github.com/zooppa/administrate-field-carrierwave/tree/v0.1.3) (2017-04-03)
 [Full Changelog](https://github.com/zooppa/administrate-field-carrierwave/compare/v0.1.2...v0.1.3)
 
