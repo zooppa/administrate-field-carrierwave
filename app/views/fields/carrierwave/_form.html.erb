@@ -20,4 +20,7 @@ attachment(s) for this attribute
   <%= f.file_field field.attribute, multiple: field.multiple? %>
   <br />
   <%= render 'fields/carrierwave/show', field: field %>
+
+  <%= f.text_field "remote_#{field.attribute}_url" if field.remote_url? %>
+  <%= f.check_box "remove_#{field.attribute}" if field.remove? %>
 </div>
