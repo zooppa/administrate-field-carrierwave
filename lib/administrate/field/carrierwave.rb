@@ -18,6 +18,14 @@ module Administrate
         options.fetch(:multiple, false)
       end
 
+      def remove?
+        options.fetch(:remove, false)
+      end
+
+      def remote_url?
+        options.fetch(:remote_url, false)
+      end
+
       # One-element array when single file field, array of files when multiple
       def files
         Array[*data]
