@@ -22,7 +22,7 @@ attachment(s) for this attribute
   <br />
   <%= render 'fields/carrierwave/show', field: field %>
 
-  <% if field.remove? %>
-    <label><%= f.check_box "remove_#{field.attribute}" %> <%= "Remove #{field.attribute}" %></label>
-  <% end %>
+  <%= f.label "remove_#{field.attribute}" do %>
+    <%= f.check_box "remove_#{field.attribute}" %> Remove <%= field.attribute %>
+  <% end if field.remove? %>
 </div>
