@@ -10,7 +10,7 @@ module Administrate
         options.fetch(:image, nil)
       end
 
-      def image_on_index
+      def image_on_index?
         options.fetch(:image_on_index, false)
       end
 
