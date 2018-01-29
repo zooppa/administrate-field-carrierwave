@@ -18,7 +18,7 @@ attachment(s) for this attribute
 </div>
 <div class="field-unit__field">
   <%= f.file_field field.attribute, multiple: field.multiple? %>
-  <%= f.text_field "remote_#{field.attribute}_url", placeholder: "remote url" if field.remote_url? %>
+  <%= f.text_field "remote_#{field.attribute}_url", placeholder: "Remote URL" if field.remote_url? %>
   <br />
   <%= render 'fields/carrierwave/show', field: field %>
 
