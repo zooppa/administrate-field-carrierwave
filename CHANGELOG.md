@@ -1,5 +1,13 @@
 # Changelog
 
+## [v0.3.0](https://github.com/zooppa/administrate-field-carrierwave/tree/v0.2.0) (2018-01-29)
+
+[Full Changelog](https://github.com/zooppa/administrate-field-carrierwave/compare/v0.2.0...v0.3.0)
+
+* Add ability to upload attachment from remote URL (thanks @neumayr)
+* Add ability to remove attachments (thanks @neumayr)
+* Do not display preview unless ready (thanks @mnrk)
+
 ## [v0.2.0](https://github.com/zooppa/administrate-field-carrierwave/tree/v0.2.0) (2017-06-06)
 
 [Full Changelog](https://github.com/zooppa/administrate-field-carrierwave/compare/v0.1.3...v0.2.0)
