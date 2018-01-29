@@ -87,7 +87,7 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-    mini_portile2 (2.1.0)
+    mini_portile2 (2.3.0)
     minitest (5.10.1)
     momentjs-rails (2.17.1)
       railties (>= 3.1)
@@ -95,8 +95,8 @@ GEM
       sass (>= 3.3)
       thor (~> 0.19)
     nio4r (2.0.0)
-    nokogiri (1.7.1)
-      mini_portile2 (~> 2.1.0)
+    nokogiri (1.8.2)
+      mini_portile2 (~> 2.3.0)
     normalize-rails (3.0.3)
     rack (2.0.1)
     rack-test (0.6.3)
@@ -156,4 +156,4 @@ DEPENDENCIES
   administrate-field-carrierwave!
 
 BUNDLED WITH
-   1.14.6
+   1.16.1
