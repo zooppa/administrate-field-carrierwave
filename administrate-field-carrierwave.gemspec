@@ -6,8 +6,8 @@ Gem::Specification.new do |gem|
   gem.authors = ['Michele Gerarduzzi']
   gem.email = ['michele.gerarduzzi@gmail.com']
   gem.homepage = 'https://github.com/zooppa/administrate-field-carrierwave'
-  gem.summary = 'A plugin to upload Carrierwave attachments in Administrate'
-  gem.description = gem.summary
+  gem.summary = 'Carrierwave field plugin for Administrate'
+  gem.description = 'A plugin to manage Carrierwave attachments in Administrate'
   gem.license = 'MIT'
 
   gem.require_paths = ['lib']
