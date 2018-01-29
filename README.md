@@ -25,7 +25,9 @@ ATTRIBUTE_TYPES = {
   bar: Field::Carrierwave.with_options(
     image: :standard,
     multiple: true,
-    image_on_index: true
+    image_on_index: true,
+    remove: false,
+    remote_url: false
   )
 }.freeze
 ```
@@ -53,6 +55,6 @@ end
 
 See also the list of [contributors](https://github.com/zooppa/administrate-field-carrierwave/contributors) who participated in this project.
 
-[Administrate]: https://github.com/thoughtbot/administrate
+[administrate]: https://github.com/thoughtbot/administrate
 [version]: https://github.com/carrierwaveuploader/carrierwave#adding-versions
 [z.productions]: https://www.z.productions/
