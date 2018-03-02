@@ -26,7 +26,6 @@ module Administrate
         options.fetch(:remote_url, false)
       end
 
-      # One-element array when single file field, array of files when multiple
       def files
         Array[*data]
       end
