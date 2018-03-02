@@ -22,7 +22,7 @@ for this attribute
     <span>No file(s) uploaded yet</span>
   <% end %>
 <% else %>
-  <% if field.image.present? && field.data.model.persisted? && field.file.version_exists?(field.image) %>
+  <% if field.image.present? && field.data.model.persisted? && field.data.file.present? %>
     <%= render 'fields/carrierwave/preview', file: field.file, field: field %>
   <% elsif field.file.present? %>
     <%= render 'fields/carrierwave/file', file: field.file %>
