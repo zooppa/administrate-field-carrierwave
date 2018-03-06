@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.3.2](https://github.com/zooppa/administrate-field-carrierwave/tree/v0.3.2) (2018-03-06)
+
+[Full Changelog](https://github.com/zooppa/administrate-field-carrierwave/compare/v0.3.1...v0.3.2)
+
+* Fix bug in view
+
 ## [v0.3.1](https://github.com/zooppa/administrate-field-carrierwave/tree/v0.3.1) (2018-03-06)
 
 [Full Changelog](https://github.com/zooppa/administrate-field-carrierwave/compare/v0.3.0...v0.3.1)
