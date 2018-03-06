@@ -10,7 +10,7 @@ A plugin to upload and preview Carrierwave attachments in [Administrate].
 Add it to your `Gemfile`:
 
 ```ruby
-gem 'administrate-field-carrierwave', '~> 0.3.0'
+gem 'administrate-field-carrierwave', '~> 0.3.1'
 ```
 
 Run:
