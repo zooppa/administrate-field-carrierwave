@@ -22,9 +22,9 @@ for this attribute
     <span>No file(s) uploaded yet</span>
   <% end %>
 <% else %>
-  <% if show_preview? %>
+  <% if field.show_preview? %>
     <%= render 'fields/carrierwave/preview', file: field.file, field: field %>
-  <% elsif show_file? %>
+  <% elsif field.show_file? %>
     <%= render 'fields/carrierwave/file', file: field.file %>
   <% else %>
       -
