@@ -2,8 +2,13 @@ require 'spec_helper'
 
 describe Administrate::Field::Carrierwave do
   subject { Administrate::Field::Carrierwave.new(:field, data, :show) }
+  let(:model) { double 'Model', persisted?: true }
+  let(:file) { double 'File' }
 
-  let(:data) { 'image.jpg' }
+  let(:cw_file) { double 'CW with file', model: model, file: file, version_exists?: true }
+  let(:cw_no_file) { double 'CW without file', model: model, file: nil, version_exists?: true }
+
+  let(:data) { cw_file }
   let(:options) { {} }
 
   before { allow(subject).to receive(:options).and_return(options) }
@@ -23,8 +28,8 @@ describe Administrate::Field::Carrierwave do
         allow(subject).to receive(:options).and_return(options)
       end
 
-      it 'returns nil' do
-        expect(output).to be_nil
+      it 'returns an empty string' do
+        expect(output).to eq ''
       end
     end
 
@@ -123,7 +128,7 @@ describe Administrate::Field::Carrierwave do
     end
 
     context 'when multiple files' do
-      let(:data) { ['image-01.jpg', 'image-02.jpg'] }
+      let(:data) { [cw_file, cw_file] }
 
       it 'returns a multi-element array' do
         expect(output.length).to eq 2
@@ -133,10 +138,46 @@ describe Administrate::Field::Carrierwave do
 
   describe '#file' do
     let(:output) { subject.file }
-    let(:data) { ['image-01.jpg', 'image-02.jpg'] }
+    let(:data) { [cw_file, cw_file] }
 
     it 'returns the first file in the array' do
-      expect(output).to eq 'image-01.jpg'
+      expect(output).to eq cw_file
+    end
+  end
+
+  describe '#show_preview?' do
+    let(:output) { subject.show_preview? }
+
+    context 'when there is an image to show' do
+      it 'returns true' do
+        expect(output).to be_truthy
+      end
+    end
+
+    context 'when there is no image to show' do
+      let(:model) { double 'Model', persisted?: false }
+
+      it 'returns false' do
+        expect(output).to be_falsey
+      end
+    end
+  end
+
+  describe '#show_file?' do
+    let(:output) { subject.show_file? }
+
+    context 'when there is a file to show' do
+      it 'returns true' do
+        expect(output).to be_truthy
+      end
+    end
+
+    context 'when there is no file to show' do
+      let(:data) { nil }
+
+      it 'returns false' do
+        expect(output).to be_falsey
+      end
     end
   end
 end
