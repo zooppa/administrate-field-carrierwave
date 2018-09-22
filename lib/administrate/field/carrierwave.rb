@@ -35,7 +35,9 @@ module Administrate
       end
 
       def show_preview?
-        data.model.persisted? && file.version_exists?(image) && data.file.present?
+        data&.model&.persisted? &&
+        data&.file.present? &&
+        file.version_exists?(image)
       end
 
       def show_file?
