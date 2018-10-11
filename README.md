@@ -52,7 +52,7 @@ end
 
 ## About
 
-`Administrate::Field::Carrierwave` is maintained by [zooppa].
+`Administrate::Field::Carrierwave` is maintained by [Zooppa].
 
 See also the list of [contributors](https://github.com/zooppa/administrate-field-carrierwave/contributors) who participated in this project.
 
