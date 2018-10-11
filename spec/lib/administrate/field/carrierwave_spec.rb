@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe Administrate::Field::Carrierwave do
@@ -5,8 +7,12 @@ describe Administrate::Field::Carrierwave do
   let(:model) { double 'Model', persisted?: true }
   let(:file) { double 'File' }
 
-  let(:cw_file) { double 'CW with file', model: model, file: file, version_exists?: true }
-  let(:cw_no_file) { double 'CW without file', model: model, file: nil, version_exists?: true }
+  let(:cw_file) do
+    double 'CW with file', model: model, file: file, version_exists?: true
+  end
+  let(:cw_no_file) do
+    double 'CW without file', model: model, file: nil, version_exists?: true
+  end
 
   let(:data) { cw_file }
   let(:options) { {} }

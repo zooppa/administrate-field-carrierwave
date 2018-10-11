@@ -1,4 +1,6 @@
-$:.push File.expand_path('../lib', __FILE__)
+# frozen_string_literal: true
+
+$LOAD_PATH.push File.expand_path('lib', __dir__)
 
 Gem::Specification.new do |gem|
   gem.name = 'administrate-field-carrierwave'
@@ -19,4 +21,5 @@ Gem::Specification.new do |gem|
 
   gem.add_development_dependency 'rake', '~> 12.3'
   gem.add_development_dependency 'rspec', '~> 3.7'
+  gem.add_development_dependency 'rubocop', '~> 0.59'
 end

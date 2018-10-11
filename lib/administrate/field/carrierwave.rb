@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'administrate/field/base'
 require 'rails'
 
@@ -36,8 +38,8 @@ module Administrate
 
       def show_preview?
         data&.model&.persisted? &&
-        data&.file.present? &&
-        file.version_exists?(image)
+          data&.file.present? &&
+          file.version_exists?(image)
       end
 
       def show_file?
