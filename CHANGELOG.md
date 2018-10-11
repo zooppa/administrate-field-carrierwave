@@ -1,5 +1,13 @@
 # Changelog
 
+## [v0.3.3](https://github.com/zooppa/administrate-field-carrierwave/tree/v0.3.3) (2018-10-11)
+
+[Full Changelog](https://github.com/zooppa/administrate-field-carrierwave/compare/v0.3.2...v0.3.3)
+
+* Fix form with nested attributes (thanks @JapArt)
+* Add RuboCop and Guard
+* Add contribution guidelines
+
 ## [v0.3.2](https://github.com/zooppa/administrate-field-carrierwave/tree/v0.3.2) (2018-03-06)
 
 [Full Changelog](https://github.com/zooppa/administrate-field-carrierwave/compare/v0.3.1...v0.3.2)
