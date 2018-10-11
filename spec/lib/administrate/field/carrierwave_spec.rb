@@ -13,6 +13,10 @@ describe Administrate::Field::Carrierwave do
   let(:cw_no_file) do
     double 'CW without file', model: model, file: nil, version_exists?: true
   end
+  let(:cw_no_version) do
+    double 'CW with file, no version', model: model, file: file,
+                                       version_exists?: false
+  end
 
   let(:data) { cw_file }
   let(:options) { {} }
@@ -34,8 +38,8 @@ describe Administrate::Field::Carrierwave do
         allow(subject).to receive(:options).and_return(options)
       end
 
-      it 'returns an empty string' do
-        expect(output).to eq ''
+      it 'returns nil' do
+        expect(output).to be_nil
       end
     end
 
@@ -165,6 +169,14 @@ describe Administrate::Field::Carrierwave do
 
       it 'returns false' do
         expect(output).to be_falsey
+      end
+    end
+
+    context 'when there is an unversioned image to show' do
+      let(:data) { cw_no_version }
+
+      it 'returns true' do
+        expect(output).to be_truthy
       end
     end
   end

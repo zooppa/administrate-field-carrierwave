@@ -9,7 +9,7 @@ module Administrate
       class Engine < ::Rails::Engine; end
 
       def image
-        options.fetch(:image, '')
+        options.fetch(:image, nil)
       end
 
       def image_on_index?
@@ -36,10 +36,13 @@ module Administrate
         files.first
       end
 
+      def model
+        data.try(:model)
+      end
+
       def show_preview?
-        data&.model&.persisted? &&
-          data&.file.present? &&
-          file.version_exists?(image)
+        has_file = model.try(:persisted?) && file.present?
+        has_file && (image ? file.version_exists?(image) : true)
       end
 
       def show_file?
