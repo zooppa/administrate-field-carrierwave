@@ -5,8 +5,8 @@ $LOAD_PATH.push File.expand_path('lib', __dir__)
 Gem::Specification.new do |gem|
   gem.name = 'administrate-field-carrierwave'
   gem.version = '0.3.4'
-  gem.authors = ['Michele Gerarduzzi']
-  gem.email = ['michele.gerarduzzi@gmail.com']
+  gem.authors = ['Zooppa']
+  gem.email = ['dev@zooppa.com']
   gem.homepage = 'https://github.com/zooppa/administrate-field-carrierwave'
   gem.summary = 'Carrierwave field plugin for Administrate'
   gem.description = 'A plugin to manage Carrierwave attachments in Administrate'
