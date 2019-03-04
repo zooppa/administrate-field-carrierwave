@@ -40,11 +40,6 @@ module Administrate
         data.try(:model)
       end
 
-      def show_preview?
-        has_file = model.try(:persisted?) && file.present?
-        has_file && (image ? file.version_exists?(image) : true)
-      end
-
       def show_file?
         file.present?
       end

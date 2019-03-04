@@ -155,32 +155,6 @@ describe Administrate::Field::Carrierwave do
     end
   end
 
-  describe '#show_preview?' do
-    let(:output) { subject.show_preview? }
-
-    context 'when there is an image to show' do
-      it 'returns true' do
-        expect(output).to be_truthy
-      end
-    end
-
-    context 'when there is no image to show' do
-      let(:model) { double 'Model', persisted?: false }
-
-      it 'returns false' do
-        expect(output).to be_falsey
-      end
-    end
-
-    context 'when there is an unversioned image to show' do
-      let(:data) { cw_no_version }
-
-      it 'returns true' do
-        expect(output).to be_truthy
-      end
-    end
-  end
-
   describe '#show_file?' do
     let(:output) { subject.show_file? }
 
