@@ -41,7 +41,7 @@ module Administrate
       end
 
       def show_file?
-        file.present?
+        file.present? && (file.filename || file.path)
       end
     end
   end

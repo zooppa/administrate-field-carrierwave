@@ -8,7 +8,8 @@ describe Administrate::Field::Carrierwave do
   let(:file) { double 'File' }
 
   let(:cw_file) do
-    double 'CW with file', model: model, file: file, version_exists?: true
+    double 'CW with file', model: model, file: file, version_exists?: true,
+      filename: 'file.txt', path: '/path/to/file'
   end
   let(:cw_no_file) do
     double 'CW without file', model: model, file: nil, version_exists?: true

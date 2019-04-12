@@ -15,7 +15,13 @@ for this attribute
   <% if field.files.any? %>
     <ul>
       <%- field.files.each do |file| %>
-        <li><%= render 'fields/carrierwave/file', file: file %></li>
+        <li>
+          <% if field.show_file? %>
+            <%= render 'fields/carrierwave/file', file: file %>
+          <% else %>
+            -
+          <% end %>
+        </li>
       <% end %>
     </ul>
   <% else %>
