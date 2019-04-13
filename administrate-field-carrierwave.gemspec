@@ -4,7 +4,7 @@ $LOAD_PATH.push File.expand_path('lib', __dir__)
 
 Gem::Specification.new do |gem|
   gem.name = 'administrate-field-carrierwave'
-  gem.version = '0.4.0'
+  gem.version = '0.4.1'
   gem.authors = ['Zooppa']
   gem.email = ['dev@zooppa.com']
   gem.homepage = 'https://github.com/zooppa/administrate-field-carrierwave'

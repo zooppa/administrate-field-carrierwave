@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.4.1](https://github.com/zooppa/administrate-field-carrierwave/tree/v0.4.1) (2019-04-13)
+
+[Full Changelog](https://github.com/zooppa/administrate-field-carrierwave/compare/v0.4.0...v0.4.1)
+
+* Fix display error when no file uploaded yet
+
 ## [v0.4.0](https://github.com/zooppa/administrate-field-carrierwave/tree/v0.4.0) (2019-03-04)
 
 [Full Changelog](https://github.com/zooppa/administrate-field-carrierwave/compare/v0.3.4...v0.4.0)
