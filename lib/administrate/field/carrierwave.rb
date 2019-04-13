@@ -12,10 +12,6 @@ module Administrate
         options.fetch(:image, nil)
       end
 
-      def image_on_index?
-        options.fetch(:image_on_index, false)
-      end
-
       def multiple?
         options.fetch(:multiple, false)
       end

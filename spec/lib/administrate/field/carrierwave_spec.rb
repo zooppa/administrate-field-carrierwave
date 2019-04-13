@@ -53,24 +53,6 @@ describe Administrate::Field::Carrierwave do
     end
   end
 
-  describe '#image_on_index?' do
-    let(:output) { subject.image_on_index? }
-
-    context 'with nil' do
-      it 'returns false' do
-        expect(output).to be false
-      end
-    end
-
-    context 'with a valid option' do
-      let(:options) { { image_on_index: true } }
-
-      it 'returns the value' do
-        expect(output).to be true
-      end
-    end
-  end
-
   describe '#multiple?' do
     let(:output) { subject.multiple? }
 
