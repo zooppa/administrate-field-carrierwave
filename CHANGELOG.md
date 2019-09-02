@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.5.0](https://github.com/zooppa/administrate-field-carrierwave/tree/v0.5.0) (2019-09-02)
+
+[Full Changelog](https://github.com/zooppa/administrate-field-carrierwave/compare/v0.4.1...v0.5.0)
+
+* Update the requirements on Rails to permit the latest version
+
 ## [v0.4.1](https://github.com/zooppa/administrate-field-carrierwave/tree/v0.4.1) (2019-04-13)
 
 [Full Changelog](https://github.com/zooppa/administrate-field-carrierwave/compare/v0.4.0...v0.4.1)
