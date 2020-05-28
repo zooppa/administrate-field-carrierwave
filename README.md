@@ -5,6 +5,16 @@
 
 A plugin to upload and preview Carrierwave attachments in [Administrate].
 
+---
+
+### IMPORTANT NOTICE
+
+**This gem is not actively maintained anymore**.
+
+If you’re interested in taking over and steward the project moving forward, please get in touch.
+
+---
+
 ## Usage
 
 Add it to your `Gemfile`:
