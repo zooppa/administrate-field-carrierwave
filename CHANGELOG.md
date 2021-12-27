@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.6.0](https://github.com/zooppa/administrate-field-carrierwave/tree/v0.6.0) (2021-12-27)
+
+ [Full Changelog](https://github.com/zooppa/administrate-field-carrierwave/compare/v0.5.0...v0.6.0)
+
+ * Add support for Rails 7 (thanks @dylanwolff)
+
 ## [v0.5.0](https://github.com/zooppa/administrate-field-carrierwave/tree/v0.5.0) (2019-09-02)
 
 [Full Changelog](https://github.com/zooppa/administrate-field-carrierwave/compare/v0.4.1...v0.5.0)
