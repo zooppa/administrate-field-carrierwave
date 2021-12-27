@@ -12,6 +12,8 @@ Gem::Specification.new do |gem|
   gem.description = 'A plugin to manage Carrierwave attachments in Administrate'
   gem.license = 'MIT'
 
+  gem.required_ruby_version = '>= 2.7.5'
+
   gem.require_paths = ['lib']
   gem.files = `git ls-files`.split("\n")
   gem.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
