@@ -17,7 +17,7 @@ Gem::Specification.new do |gem|
   gem.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
 
   gem.add_runtime_dependency 'administrate', '< 1.0.0'
-  gem.add_runtime_dependency 'rails', '>= 4.2', '< 7'
+  gem.add_runtime_dependency 'rails', '>= 4.2', '< 8'
 
   gem.add_development_dependency 'guard', '~> 2.14'
   gem.add_development_dependency 'guard-rspec', '~> 4.7'
