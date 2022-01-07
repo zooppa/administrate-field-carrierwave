@@ -1,7 +1,6 @@
 # Administrate::Field::Carrierwave
 
-[![Build Status](https://travis-ci.com/zooppa/administrate-field-carrierwave.svg?branch=master)](https://travis-ci.com/zooppa/administrate-field-carrierwave)
-[![Code Climate](https://codeclimate.com/github/zooppa/administrate-field-carrierwave/badges/gpa.svg)](https://codeclimate.com/github/zooppa/administrate-field-carrierwave)
+[![Build status](https://github.com/zooppa/administrate-field-carrierwave/actions/workflows/build.yml/badge.svg)](https://github.com/zooppa/administrate-field-carrierwave/actions/workflows/build.yml) [![Code Climate](https://codeclimate.com/github/zooppa/administrate-field-carrierwave/badges/gpa.svg)](https://codeclimate.com/github/zooppa/administrate-field-carrierwave)
 
 A plugin to upload and preview Carrierwave attachments in [Administrate].
 
