@@ -11,6 +11,7 @@ Gem::Specification.new do |gem|
   gem.summary = 'Carrierwave field plugin for Administrate'
   gem.description = 'A plugin to manage Carrierwave attachments in Administrate'
   gem.license = 'MIT'
+  gem.metadata['rubygems_mfa_required'] = 'true'
 
   gem.required_ruby_version = '>= 2.7.5'
 
