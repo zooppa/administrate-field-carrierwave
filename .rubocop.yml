@@ -1,6 +1,7 @@
 AllCops:
   Exclude:
     - 'bin/*'
+  NewCops: enable
 
 Documentation:
   Enabled: false
