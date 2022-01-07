@@ -52,10 +52,10 @@ end
 
 ### Options
 
-* `image` (default: `nil`): a [version] that will be displayed in an `<img>` element.
-* `multiple` (default: `false`): allows uploading of multiple files. **ATTENTION 🚨**: [requires CarrierWave’s `master` branch](https://github.com/carrierwaveuploader/carrierwave#multiple-file-uploads). Uploaded files will replace the current ones – if present – and not add to them.
-* `remove` (default: `false`): allow to remove previously uploaded files. **ATTENTION 🚨** extend [`permitted_attributes`](https://github.com/thoughtbot/administrate/issues/990#issuecomment-339066788) by `remove_FIELD`
-* `remote_url` (default: `false`): allow uploading files from a remote location. **ATTENTION 🚨** extend [`permitted_attributes`](https://github.com/thoughtbot/administrate/issues/990#issuecomment-339066788) by `remote_FIELD_url`
+- `image` (default: `nil`): a [version] that will be displayed in an `<img>` element.
+- `multiple` (default: `false`): allows uploading of multiple files. **ATTENTION 🚨**: [requires CarrierWave’s `master` branch](https://github.com/carrierwaveuploader/carrierwave#multiple-file-uploads). Uploaded files will replace the current ones – if present – and not add to them.
+- `remove` (default: `false`): allow to remove previously uploaded files. **ATTENTION 🚨** extend [`permitted_attributes`](https://github.com/thoughtbot/administrate/issues/990#issuecomment-339066788) by `remove_FIELD`
+- `remote_url` (default: `false`): allow uploading files from a remote location. **ATTENTION 🚨** extend [`permitted_attributes`](https://github.com/thoughtbot/administrate/issues/990#issuecomment-339066788) by `remote_FIELD_url`
 
 ## About
 
