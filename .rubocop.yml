@@ -1,11 +1,9 @@
 AllCops:
-  Exclude:
-    - 'bin/*'
   NewCops: enable
-
-Documentation:
-  Enabled: false
 
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*.rb'
+
+Style/Documentation:
+  Enabled: false
